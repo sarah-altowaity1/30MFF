@@ -15,7 +15,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background:linear-gradient(#eaf7d5, #e2f2c9);
+    /* background:linear-gradient(#eaf7d5, #e2f2c9); */
+    background: #ffcd58;
     /* height: 100vh; */
     overflow-x: hidden;
 }
@@ -39,8 +40,8 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: var(--main); 
-    text-shadow: rgba(0, 0, 0, 0.2);
+    color: white; 
+    text-shadow: rgba(0, 0, 0, 0.7);
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px; 
@@ -81,8 +82,8 @@ nav a:hover, nav a.active{
 
 .about{
     position: relative;
-    background: linear-gradient(#5f0a05,#ffd3b6);
-    /* background: #fffaa0; */
+    /* background: linear-gradient(#5f0a05,#ffd3b6); */
+    background: #dad870;
     /* margin-bottom: 100px;
     background: #ffd3b6; */
 }
@@ -188,8 +189,9 @@ nav a:hover, nav a.active{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#ffd3b6, #fae8dd);
-    padding-top: 100px;
+    /* background: linear-gradient(#ffd3b6, #fae8dd); */
+    background: #ffcd58;
+    padding-top: 10%;
 }
 
 .social-media-icon{
@@ -210,6 +212,7 @@ nav a:hover, nav a.active{
     align-items: center;
     justify-content: center;
     color: grey;
-    background: #fae8dd;
+    /* background: #fae8dd; */
     padding-bottom: 30px;
+    background: #ffcd58;
 }
