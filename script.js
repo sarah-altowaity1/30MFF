@@ -81,6 +81,7 @@ var TxtType = function(el, toRotate, period) {
 
 let scroll_notif = document.getElementById('scroll-notif');
 
+
 setInterval(function() {
     scroll_notif.style.display = (scroll_notif.style.display == 'none' ? '' : 'none'); 
 }, 1200);
