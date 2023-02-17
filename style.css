@@ -23,7 +23,7 @@ body{
     left: 0;
     width: 100%;
     padding: 30px 100px;
-    display: flex; 
+    display: flex; /* align items with auto width and auto height*/ 
     justify-content: center;
     align-items: center;
     z-index: 100;
@@ -64,7 +64,7 @@ nav a:hover, nav a.active{
 /* Use flex box for the organization of elements in the parallax div */
 .parallax{
     position: relative;
-    display: flex;
+    display: flex; /* align items with auto width and auto height*/ 
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -164,13 +164,12 @@ a table dispaly to the back of the video as a border*/
     position: relative;
     height: 900px;
     background: linear-gradient(#ffaaa5,#ffd3b6);
-    /* padding: 100px; */
-    display: flex;
+    display: flex; /* align items with auto width and auto height*/ 
 }
 
 .col{
     height: 100%;
-    flex:1;
+    flex:1; /* div will grow and shrink in the same proportion as the window size */
     color: #fff;
     box-sizing: border-box;
     padding: 25px;
@@ -238,7 +237,7 @@ divs within the characters div is hovered over*/
 }
 .contact{
     position: relative;
-    display: flex;
+    display: flex; /* align items with auto width and auto height*/ 
     justify-content: center;
     align-items: center;
     padding-top: 10%;
@@ -259,7 +258,7 @@ divs within the characters div is hovered over*/
 }
 
 .bottom-msg{
-    display: flex;
+    display: flex; /* align items with auto width and auto height*/ 
     align-items: center;
     justify-content: center; 
     color: grey;
