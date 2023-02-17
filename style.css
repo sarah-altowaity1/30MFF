@@ -129,28 +129,35 @@ nav a:hover, nav a.active{
     font-size: 60px;
     color: #fff;
     padding-top: 7%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 
 
-.film{
+#film{
     position: relative;
     background:#FF9636;
     padding-top: 0;
-}
-
-.film .video-border{
-    width: 95%;
-    background: black;
-    padding: 0;
-
-}
-
-video{
-    padding-top: 2%;
     padding-bottom: 10%;
-    width: 90%;
 }
+
+.video-border{
+    width: 90%;
+    background: rgb(30, 28, 28);
+    padding-bottom: 5%;
+    border-radius: 30px;
+    padding-top: 5%;
+}
+
+#film video{
+    border-radius: 20px; 
+    width: 89%;
+}
+/* .film-seperation{
+    position: relative;
+    height: 200px;
+    width: 100vw;
+    background:#FF9636;
+} */
 
 .characters{
     position: relative;
@@ -229,7 +236,7 @@ divs within the characters div is hovered over*/
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(#ffd3b6, #fae8dd); */
-    background: #ffcd58;
+    /* background: #ffd3b6; */
     padding-top: 10%;
 }
 
@@ -249,9 +256,9 @@ divs within the characters div is hovered over*/
 .bottom-msg{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     color: grey;
     /* background: #fae8dd; */
-    padding-bottom: 30px;
-    background: #ffcd58;
+    padding-bottom: 3.5%;
+    /* background: #ffd3b6; */
 }
