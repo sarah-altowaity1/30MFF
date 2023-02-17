@@ -1,4 +1,5 @@
-let text = document.getElementById('film-title');
+let film_title = document.getElementById('film-title');
+let scroll_notification = document.getElementById('scroll_notif');
 let leaf = document.getElementById('leaf');
 let hill1 = document.getElementById('hill1');
 let hill4 = document.getElementById('hill4');
@@ -6,10 +7,9 @@ let hill5 = document.getElementById('hill5');
 let parallax = document.getElementById('parallax');
 
 window.addEventListener('scroll', ()=>{
-    console.log(parallax.style.height);
     let value = window.scrollY;
     if (value <= 400){
-        text.style.marginTop = value * 2.5 + 'px';
+        film_title.style.marginTop = value * 2.5 + 'px';
     }
     leaf.style.top = value * -1.5 + 'px';
     highline.style.top = value * -1.5 + 'px';
@@ -77,4 +77,11 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+
+let scroll_notif = document.getElementById('scroll-notif');
+
+setInterval(function() {
+    scroll_notif.style.display = (scroll_notif.style.display == 'none' ? '' : 'none'); 
+}, 1200);
 

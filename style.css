@@ -79,6 +79,13 @@ nav a:hover, nav a.active{
 
 }
 
+#scroll-notif{
+    position: absolute;
+    color: white;
+    transition: 1.5s;
+    padding-top: 40%;
+}
+
 .parallax img{
     position: absolute;
     top:0;
@@ -94,6 +101,8 @@ nav a:hover, nav a.active{
     background: #dad870;
     /* margin-bottom: 100px;
     background: #ffd3b6; */
+    height: 100%;
+    width: 100%;
 }
 
 .about h2{
@@ -121,13 +130,16 @@ nav a:hover, nav a.active{
 
 .film{
     background:#FF9636;
-    height: 100vh;
-    width:100vw;
+    height: 100%;
+    width:100%;
+    padding: 10%;
 }
 
 .film video{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom:200px;
+    padding: 10px 10px 10px 10px;
+    height: 100%;
+    width:100%;
 }
 
 .characters{
