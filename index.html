@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Link to fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Link to CSS stylesheet -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
     <!-- Container to hold the navigation bar -->
     <div class="container">
         <nav>
-
+            <!--Hyperlinks to different portions of the website-->
             <a href = "#parallax"> Home </a> 
             <a href = "#about"> About </a> 
             <a href = "#film"> The Film </a> 
@@ -24,27 +25,27 @@
             
         </nav>
     </div>
-
+    <!-- Div container within which the parallax scrolling effect is implemented -->
     <div id='parallax' class="parallax">
-        <!-- <img src="hill1.png" id="hill1"> -->
-        <!-- <img src="hill2.png" id="hill2">     -->
+        <!--Display images on the page-->
         <img src="graphic-red/hill3.png" id="hill3">
         <img src="graphic-red/highline.png" id="highline">        
         <img src="graphic-red/hill4.png" id="hill4">
         <img src="graphic-red/hill5.png" id="hill5">
-        <!-- <img src="tree.png" id="tree"> -->
-        <h2 id="film-title"> 30MFF FILM</h2>
+        <h2 id="film-title"> 30MFF FILM</h2> <!--Render the title of the film in the middle -->
         <img src="graphic-red/leaf.png" id="leaf">
         <img src="graphic-red/plant.png" id="plant">
-        <h3 id="scroll-notif">Scroll down to learn more!</h3>
+        <h3 id="scroll-notif">Scroll down to learn more!</h3> <!-- Render the flashing notification that prompts the user to scroll to reveal more information-->
     </div>
-
+    <!-- Div section detailing what the film is about -->
     <div id='about' class="about">
+        <!-- Display some quotes to the user using a typewriting animation -->
         <h2>
             <a href="#about" class="typewrite" data-period="2000" data-type='[ "It is all about the journey.", "Frown less.", "Smile often."]'>
               <span class="wrap"></span>
             </a>
         </h2>
+        <!-- A little background on the context of the film -->
         <p>
             Every Tuesday and Thursday at 8:30 a.m., I walk along the Highline, a windy path between the residential 
             colleges at NYU Abu Dhabi to get to my Communications Lab class.  <br><br>
@@ -55,15 +56,23 @@
             In this film, I invite you to accompany me on one such walk – I Hope it gets as many smiles out of you as how many I received :) <br><br>
         </p>
     </div>
+    <!-- Div section to display the film (the video media) at 90% height and width -->
     <div id="film" class="'film">
         <center>
-            <video width= 90% height= 90% controls>
-                <source src="30MFF.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </videp>
+            <div class="video-border">
+                <video controls>
+                    <source src="30MFF.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </center>
     </div>
+    <!-- Div section for the character/appearance in the video-->
     <div id="characters"  class="characters">
+        <!-- This div section is divided up into smaller div column sections that appear
+        to be stacked next to each other -->
+        <!--Each column has an image of the character, a little description, and a heading with their name-->
+        <!--CSS is used to reveal the paragraph description when the column is hovered over-->
         <div class="col">
             <h2> SARE </h2>
             <p class="caption"> Hi! My name's Sarah. People close to me call me Sare, the nickname my young sister
@@ -71,8 +80,8 @@
                 I am a student at NYU Abu Dhabi and, in this short "vlog," I document a snippet of what I see when I am walking back
                 to my residential building from class. 
             </p>
-            <img src= "sarah.png" class="color" height="700">
-            <img src= "sarah_b_w.png" class="no-color" height="700">
+            <img src= "sarah.png" class="color" height= 80%>
+            <img src= "sarah_b_w.png" class="no-color" height=80%>
         </div>
         <div class="col">
             <h2> MooMoo </h2>
