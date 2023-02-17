@@ -187,13 +187,13 @@ a table dispaly to the back of the video as a border*/
     background:#badabf;
 }
 .col:nth-child(4){
-    background: #daeeb9;
+    background: #d4eaaf;
 }
 
 /* Do not display the .caption unless column is hovered on*/
 .caption{
     max-width: 230px;
-    font-size: 16px;
+    font-size: 18px;
     margin: 28px 0;
     display: none;
 }
