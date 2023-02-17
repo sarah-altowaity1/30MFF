@@ -1,3 +1,4 @@
+/* Styling for all elements*/
 *{
     margin: 0;
     padding: 0;
@@ -6,14 +7,14 @@
     text-decoration: none;
 }
 
+/* Create a smooth scrolling behavior of elements*/
 html{
     scroll-behavior: smooth;
 }
+
 body{
-    /* background:linear-gradient(#eaf7d5, #e2f2c9); */
     background: #ffcd58;
-    /* height: 100vh; */
-    overflow-x: hidden;
+    overflow-x: hidden; /*clip away an content overflowing in the x direction */
 }
 
 .container{
@@ -39,6 +40,8 @@ nav{
     opacity:0.8; 
 }
 
+/* Disable text decoration so as to not have undesirable styling after clicking on 
+a naviagtion item*/
 nav a{
     text-decoration: none;
     color: white; 
@@ -51,12 +54,14 @@ nav a{
 
 }
 
+/* Change the background of the navigation element that is hovered on 
+and enlarge its size*/
 nav a:hover, nav a.active{
     background: #ffaaa5;
     color: #fff;
     font-size: 20px;
 }
-
+/* Use flex box for the organization of elements in the parallax div */
 .parallax{
     position: relative;
     display: flex;
@@ -81,6 +86,9 @@ nav a:hover, nav a.active{
     padding-top: 40%;
 }
 
+/*By setting the positioning of the images in the parallax div as 
+absolute and the parallax container itself as relative a parallax effect 
+when scrolling is created.*/
 .parallax img{
     position: absolute;
     top:0;
@@ -92,10 +100,7 @@ nav a:hover, nav a.active{
 
 .about{
     position: relative;
-    /* background: linear-gradient(#5f0a05,#ffd3b6); */
     background: #dad870;
-    /* margin-bottom: 100px;
-    background: #ffd3b6; */
     height: 100%;
     width: 100%;
     padding-top: 8%;
@@ -140,6 +145,8 @@ nav a:hover, nav a.active{
     padding-bottom: 10%;
 }
 
+/* Add a black background box with rounded corners, resembling
+a table dispaly to the back of the video as a border*/
 .video-border{
     width: 90%;
     background: rgb(30, 28, 28);
@@ -152,12 +159,6 @@ nav a:hover, nav a.active{
     border-radius: 20px; 
     width: 89%;
 }
-/* .film-seperation{
-    position: relative;
-    height: 200px;
-    width: 100vw;
-    background:#FF9636;
-} */
 
 .characters{
     position: relative;
@@ -176,6 +177,7 @@ nav a:hover, nav a.active{
     transition: 0.6s;
     position: relative;
 }
+/* Background color of the columns*/
 .col:nth-child(1){
     background: #a8e6cf;
 }
@@ -189,6 +191,7 @@ nav a:hover, nav a.active{
     background: #daeeb9;
 }
 
+/* Do not display the .caption unless column is hovered on*/
 .caption{
     max-width: 230px;
     font-size: 16px;
@@ -201,6 +204,7 @@ nav a:hover, nav a.active{
     font-size: 30px;
 }
 
+/* Dynamically enlarge a column div when hovered on with flex */
 .col:hover{
     flex-grow: 2.5;
 }
@@ -218,15 +222,17 @@ divs within the characters div is hovered over*/
     bottom:0;
 }
 
+/* By defualt, do not dispaly images with class color in the columns*/
 .col .color{
     display: none;
     position: absolute;
-
 }
 
+/* Display colored images only when the column is hovered on*/
 .col:hover .color{
     display: inline;
 }
+/* Hide black and white images when the column is hovered on*/
 .col:hover .no-color{
     display: none;
 }
@@ -235,8 +241,6 @@ divs within the characters div is hovered over*/
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(#ffd3b6, #fae8dd); */
-    /* background: #ffd3b6; */
     padding-top: 10%;
 }
 
@@ -249,6 +253,7 @@ divs within the characters div is hovered over*/
     color:rgba(251, 16, 141, 0.2)
 }
 
+/* Change icon color to red when hovered on*/
 .social-media-icon:hover{
     color: red;
 }
@@ -258,7 +263,5 @@ divs within the characters div is hovered over*/
     align-items: center;
     justify-content: center; 
     color: grey;
-    /* background: #fae8dd; */
     padding-bottom: 3.5%;
-    /* background: #ffd3b6; */
 }
